@@ -1,0 +1,11 @@
+digraph G {
+    a -> if;
+    if -> b [label=F];
+    if -> end_if [label=T];
+    end_if -> c;
+    c -> return;
+
+    a [label = ""];
+    b [label = "return\nfalse"]
+    c [label = ""];
+}
